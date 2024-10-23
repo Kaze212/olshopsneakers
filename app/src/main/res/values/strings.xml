@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">AdidasShop</string>
+    <string name="intro_text">
+        <font color="#000000"> Welcome To Javally Shop</font>\n
+        <font color="#FFC0CB">Step into Style</font>\n
+        <font color="000000">And </font>
+        <font color="#FFC0CB">Stride with Confidence</font> </string>
+
+    <string name="intro_subtitle">
+         Jelajahi ribuan pilihan,\n
+        temukan gaya sempurna,\n
+        dan beli sneakers impianmu hanya dengan satu sentuhan.
+    </string>
+
+    <string name="intro_signin">Already have an account? <font color="#FFC0CB">sign in</font></string>
+</resources>

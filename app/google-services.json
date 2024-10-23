@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "40053011819",
+    "project_id": "adidasshop-77c94",
+    "storage_bucket": "adidasshop-77c94.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:40053011819:android:da38445db71b4d0504882e",
+        "android_client_info": {
+          "package_name": "com.example.adidasshop"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBM8GJlX5RZx3LzzaIShHNz_8c0ZJET0f8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
