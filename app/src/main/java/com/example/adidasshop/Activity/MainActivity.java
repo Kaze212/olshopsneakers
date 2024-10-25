@@ -1,9 +1,11 @@
 package com.example.adidasshop.Activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -20,6 +22,7 @@ import androidx.viewpager2.widget.MarginPageTransformer;
 import com.example.adidasshop.Adapter.BestSellerAdapter;
 import com.example.adidasshop.Adapter.CategoryAdapter;
 import com.example.adidasshop.Adapter.SliderAdapter;
+import com.example.adidasshop.Helper.ManagmentCart;
 import com.example.adidasshop.Model.SliderModel;
 import com.example.adidasshop.R;
 import com.example.adidasshop.ViewModel.MainViewModel;
@@ -41,6 +44,7 @@ public class MainActivity extends BaseActivity {
         initBanners();
         initCategory();
         initBestSeller();
+        bottomNavigation();
         
 
         Window window=getWindow();
@@ -54,6 +58,17 @@ public class MainActivity extends BaseActivity {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
+        });
+    }
+
+    private void bottomNavigation() {
+        binding.cartBtn.setOnClickListener(v -> {
+            ManagmentCart managmentCart= new ManagmentCart(MainActivity.this);
+            if (!managmentCart.getListCart().isEmpty()){
+                startActivity(new Intent(MainActivity.this, CartActivity.class));
+            }else {
+                Toast.makeText(MainActivity.this, "Keranjang Anda Kosong", Toast.LENGTH_SHORT).show();
+            }
         });
     }
 
