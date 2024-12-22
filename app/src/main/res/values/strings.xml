@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">AdidasShop</string>
     <string name="intro_text">
-        <font color="#000000"> Welcome To Javally Shop</font>\n
+        <font color="#000000"> Welcome To Snikerins Shop</font>\n
         <font color="#FFC0CB">Step into Style</font>\n
         <font color="000000">And </font>
         <font color="#FFC0CB">Stride with Confidence</font> </string>

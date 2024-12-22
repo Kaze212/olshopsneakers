@@ -1,6 +1,7 @@
 package com.example.adidasshop.Adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,6 +12,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.resource.bitmap.CenterCrop;
 import com.bumptech.glide.request.RequestOptions;
+import com.example.adidasshop.Activity.DetailActivity;
 import com.example.adidasshop.Model.ItemsModel;
 import com.example.adidasshop.databinding.ViewholderBestSellerBinding;
 
@@ -46,11 +48,10 @@ public class BestSellerAdapter extends RecyclerView.Adapter<BestSellerAdapter.Vi
                 .apply(new RequestOptions().transform(new CenterCrop()))
                 .into(holder.binding.picBestSeller);
 
-        holder.itemView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-            }
+        holder.itemView.setOnClickListener(v -> {
+            Intent intent=new Intent(context, DetailActivity.class);
+            intent.putExtra("object",item);
+            context.startActivity(intent);
         });
     }
 

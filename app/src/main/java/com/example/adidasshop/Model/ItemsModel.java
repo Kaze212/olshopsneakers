@@ -5,7 +5,7 @@ import java.util.ArrayList;
 
 public class ItemsModel implements Serializable {
     private String title;
-    private String descriptions;
+    private String description;
     private ArrayList<String> picUrl;
     private ArrayList<String> size;
     private double price;
@@ -27,12 +27,12 @@ public class ItemsModel implements Serializable {
         this.title = title;
     }
 
-    public String getDescriptions() {
-        return descriptions;
+    public String getDescription() {
+        return description;
     }
 
-    public void setDescriptions(String descriptions) {
-        this.descriptions = descriptions;
+    public void setDescription(String description) {
+        this.description = description;
     }
 
     public ArrayList<String> getPicUrl() {
